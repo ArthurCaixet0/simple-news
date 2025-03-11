@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Diário</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho do Site -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Jornal Diário</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Política</a></li>
+                    <li><a href="#">Economia</a></li>
+                    <li><a href="#">Esportes</a></li>
+                    <li><a href="#">Cultura</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manchete principal -->
+    <div class="manchete">
+        <div class="container">
+            <div class="manchete-principal">
+                <h2>Novos avanços tecnológicos prometem revolucionar o mercado.</h2>
+                <p class="data">Publicado em 11 de março de 2025</p>
+                <div class="destaque-imagem">
+                    <img src="img/tech1.png" alt="Imagem representativa da notícia" width="300px" height="auto">
+                </div>
+                <p class="resumo">
+                    Empresas de tecnologia apresentam inovações que podem transformar diversos setores
+                    da economia nos próximos anos. Especialistas apontam que essas mudanças terão
+                    impacto significativo no mercado de trabalho.
+                </p>
+                <a href="https://blog.estacio.br/carreiras/tecnologia-no-mercado-de-trabalho/" class="leia-mais"
+                    target="_blank" rel="noopener noreferrer">Leia mais</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal com 3 colunas -->
+    <div class="conteudo">
+        <div class="container">
+            <!-- Coluna da esquerda - notícias principais -->
+            <div class="coluna-principal">
+                <div class="noticia">
+                    <h3>Novas medidas econômicas são anunciadas pelo governo</h3>
+                    <p class="data">21 de abril de 2024</p>
+                    <p>Pacote inclui incetivos para pequenas empresas e redução de impostos para setores específicos...</p>
+                    <a href="https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2024/04/governo-federal-lanca-programa-economico-que-estimula-meis-micro-e-pequenas-empresas-por-meio-de-acesso-a-credito-e-renegociacao-de-dividas?utm_source=chatgpt.com" class="leia-mais" target="_blank" rel="noopener noreferrer">Continuar lendo</a>
+                </div>
+
+                <div class="noticia">
+                    <h3>Descoberta científica promete avanços na medicina.</h3>
+                    <p class="data">13 de dezembro de 2024</p>
+                    <p>Pesquisadores identificam novo método para tratamento de doenças degenerativas...</p>
+                    <a href="https://www.instagram.com/andremaia/p/DDkj28dSmsG/cientistas-descobrem-novo-mecanismo-por-tr%C3%A1s-da-degenera%C3%A7%C3%A3o-macular-relacionada-/" class="leia-mais" target="_blank" rel="noopener noreferrer">Continuar lendo</a>
+                </div>
+            </div>
+
+            <!-- Coluna do meio - outras notícias -->
+            <div class="coluna-secundaria">
+                <div class="coluna-secundaria">
+                    <h4>Campeonato nacional de futebol entra na fase decisiva</h4>
+                    <p>Times se preparam para disputar as últimas rodadas com chance de título...</p>
+                </div>
+
+                <div class="noticia-secundaria">
+                    <h4>Previsão do tempo indica chuvas para o final de semana</h4>
+                    <p>Meteorologistas alertam para possibilidade de tempestades em diversas regiões...</p>
+                </div>
+
+                <div class="noticia-secundaria">
+                    <h4>Festival de cinema anuncia filmes selecionados</h4>
+                    <p>Evento acontecerá no próximo mês e contará com produções nacionais e internacionais...</p>
+                </div>
+            </div>
+
+            <!-- Coluna da direita - publicidade e destaques -->
+            <div class="coluna-lateral">
+                <div class="publicidade">
+                    <h4>Publicidade</h4>
+                    <div class="banner-ad">
+                        <p>Espaço reservado para anúncios</p>
+                    </div>
+                </div>
+
+                <div class="mais-lidas">
+                    <h4>Mais lidas</h4>
+                    <ul>
+                        <li><a href="https://www.estadao.com.br/saude/estudo-brasileiro-investiga-o-efeito-da-musculacao-no-cerebro-de-idosos-veja-as-descobertas/" target="_blank" rel="noopener noreferrer">Estudo mostra que musculação tem efeitos positivos no cérebro dos idosos</a></li>
+                        <li><a href="https://www.oc.eco.br/93-dos-paises-perdem-prazo-para-entrega-de-novas-metas-climaticas/" target="_blank" rel="noopener noreferrer">Grandes emissores estão atrasados para entrega de novas metas climáticas</a></li>
+                        <li><a href="https://valorinveste.globo.com/produtos/investimento-no-exterior/noticia/2025/03/11/dolar-hoje-11-de-fevereiro-de-2025.ghtml" target="_blank" rel="noopener noreferrer">Valor do Dólar cai a R$ 5,81 após Ucrânia concordar com cessar-fogo</a></li>
+                        <li><a href="https://www.tudogostoso.com.br/receita/319793-crumble-de-maca-com-sorvete-e-farofa-de-pipoca.html">Receita deliciosa de crumble de maçã com sorvete e farofa de pipoca</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Rodapé do site -->
+    <div class="footer">
+        <div class="container">
+            <div class="info-footer">
+                <p>&copy; 2025 Jornal Diário - Todos os direitos reservados</p>
+            </div>
+            <div class="redes-sociais">
+                <p>Siga-nos:
+                    <a href="#">Facebook</a>
+                    <a href="">X</a>
+                    <a href="">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
