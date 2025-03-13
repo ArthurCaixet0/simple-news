@@ -1,0 +1,271 @@
+/* Reset básico */
+* {
+    margin: 0; /* Significa que o elemento não terá nenhuma margem extra */
+    padding: 0; /* Garante que não haverá espaço extra dentro do elemento */
+    box-sizing: border-box; /* Indica ao navegador que o o padding e a borda devem ser incluídos na largura e altura totais do elemento. Isso facilita muito o controle do layout */
+}
+
+body {
+    font-family: 'Georgia', serif; /* Define a fonte do texto do body, ao tentar usar a fonte Georgia primeiro. Caso Georgia não esteja disponível, o navegador usará qualquer fonte genérica do tipo serifada */
+    line-height: 1.6; /* Define a altura da linha do texto, sendo a altura da linha 1.6 vezes o tamanho da fonte, evitando que as linhas fiquem muito próximas */
+    color: #333; /* Define a cor do texto */
+    background-color: #f5f5f5; /* Define a cor de fundo da página */
+}
+
+/* Container para centralizar conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    border-bottom: 3px solid #e74c3c;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color:#e74c3c ;
+}
+
+/* Manchete principal */
+.manchete {
+    background-color: white;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.manchete-principal h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.data {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.destaque-imagem {
+    margin: 20px 0;
+}
+
+.destaque-imagem img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.resumo {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.leia-mais {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.leia-mais:hover {
+    background-color: #c0392b;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    padding: 30px 0;
+}
+
+.conteudo .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Coluna principal (notícias maiores) */
+.coluna-principal {
+    flex: 2;
+    min-width: 300px;
+}
+
+.noticia {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticia h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    margin-bottom: 15px;
+}
+
+/* Coluna secundária (notícias médias) */
+.coluna-secundaria {
+    flex: 1;
+    min-width: 250px;
+}
+
+.noticia-secundaria {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.noticia-secundaria h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+/* Coluna lateral (publicidade, mais lidas) */
+.coluna-lateral {
+    flex: 1;
+    min-width: 200px;
+}
+
+.publicidade, .mais-lidas {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.publicidade h4, .mais-lidas h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #2c3e50;
+}
+
+.banner-ad {
+    background-color: #f8f9fa;
+    border: 1px dashed #ccc;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #777;
+}
+
+.mais-lidas ul {
+    list-style: none;
+}
+
+.mais-lidas ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.mais-lidas ul li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.mais-lidas ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mais-lidas ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-footer, .redes-sociais {
+    margin: 10px 0;
+}
+
+.redes-sociais a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+    
+    .menu ul {
+        margin-top: 15px;
+    }
+
+    .conteudo .container {
+        flex-direction: column;
+    }
+    .coluna-principal, .coluna-secundaria, .coluna-lateral {
+        width: 100%;
+    }
+}
